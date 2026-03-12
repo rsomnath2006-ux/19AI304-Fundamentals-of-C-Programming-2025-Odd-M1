@@ -26,7 +26,21 @@ To build a C program that prints integer, float,character, and string literals o
 ### Step 4: 
    Stop
 # Program:
+```
+#include <stdio.h>
+
+int main() {
+    printf("Integer literal: %d, Size: %lu bytes\n", 10, sizeof(10));
+    printf("Float literal: %f, Size: %lu bytes\n", 3.14, sizeof(3.14));
+    printf("Character literal: %c, Size: %lu bytes\n", 'A', sizeof('A'));
+    printf("String literal: %s, Size: %lu bytes\n", "Hello C", sizeof("Hello C"));
+
+    return 0;
+}
+```
 # Output:
+<img width="443" height="199" alt="image" src="https://github.com/user-attachments/assets/2a27c669-c136-4444-b00b-f4537b76aa27" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -57,7 +71,23 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 6:  
   Stop
 # Program:
+```
+#include <stdio.h>
+
+#define PI 3.14159
+
+int main() {
+    const int DAYS = 7;
+
+    printf("Value of Macro Constant PI: %f\n", PI);
+    printf("Value of Constant Variable DAYS: %d\n", DAYS);
+
+    return 0;
+}
+```
 # Output:
+<img width="413" height="146" alt="image" src="https://github.com/user-attachments/assets/e9e61fae-0ab5-42c4-82fd-211c9abdd712" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -81,7 +111,26 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 5:    
    Stop
 # Program:
+```
+#include <stdio.h>
+
+int main() {
+    int num = 10;
+    float percentage = 75.5;
+    double salary = 50000.12345;
+    char grade = 'A';
+
+    printf("Integer value: %d\n", num);
+    printf("Float value: %f\n", percentage);
+    printf("Double value: %lf\n", salary);
+    printf("Character value: %c\n", grade);
+
+    return 0;
+}
+```
 # Output:
+<img width="302" height="202" alt="image" src="https://github.com/user-attachments/assets/dcab951e-7b09-4b81-b2ac-242b36e92700" />
+
 # Result: 
 
 # 19AI304-Fundamentals-of-C-Programming-2025-Odd
@@ -120,7 +169,35 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+```
+#include <stdio.h>
+
+int main() {
+    int a, b;
+    
+    printf("Enter two integers: ");
+    scanf("%d %d", &a, &b);
+
+    printf("Sum: %d\n", a + b);
+    printf("Difference: %d\n", a - b);
+    printf("Product: %d\n", a * b);
+    printf("Quotient: %d\n", a / b);
+    printf("Remainder: %d\n", a % b);
+
+    printf("Bitwise AND: %d\n", a & b);
+    printf("Bitwise OR: %d\n", a | b);
+    printf("Bitwise XOR: %d\n", a ^ b);
+    printf("Left Shift: %d\n", a << b);
+    printf("Right Shift: %d\n", a >> b);
+    printf("Bitwise NOT of a: %d\n", ~a);
+    printf("Bitwise NOT of b: %d\n", ~b);
+
+    return 0;
+}
+```
 # Output:
+<img width="307" height="444" alt="image" src="https://github.com/user-attachments/assets/9c548fdc-5e89-4f38-82f3-8a0c956eee60" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -165,7 +242,30 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+```
+#include <stdio.h>
+
+int main() {
+    char ch;
+    
+    printf("Enter a character: ");
+    scanf("%c", &ch);
+
+    (ch >= '0' && ch <= '9') ?
+        printf("Digit") :
+    ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')) ?
+        ((ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'||ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U') ?
+            printf("Vowel") : printf("Consonant")) :
+        printf("Special Symbol");
+
+    return 0;
+}
+```
 # Output:
+<img width="244" height="129" alt="image" src="https://github.com/user-attachments/assets/2ffb6c8c-e6ae-4dca-8ba6-1ffd2899a45e" />
+
+<img width="244" height="129" alt="image" src="https://github.com/user-attachments/assets/07fbf63b-e1a2-457f-bda2-80f60cc2ea52" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
